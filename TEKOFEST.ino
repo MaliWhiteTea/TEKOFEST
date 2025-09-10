@@ -8,7 +8,7 @@
 
 
 
-extern String yogunlukReal = ""; 
+
 
 void setup() {
   Serial.begin(9600);
@@ -18,6 +18,7 @@ void setup() {
   pinMode(LATCH, OUTPUT);
   pinMode(CLOCK, OUTPUT);
   bekle(2000);
+  
   mode0(100);
 }
 

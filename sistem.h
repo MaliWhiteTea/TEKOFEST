@@ -11,10 +11,10 @@ SoftwareSerial grup2(7,5); //rx4 tx5
 
 String gelenveri = "";
 int an = 0;
-int targetAn = -1;   // normalde -1 (yani özel istek yok)
+int targetAn = -1;   
 bool specialDelayActive = false;
 unsigned long specialDelayEnd = 0;
-int delayedTarget = -1;   // specialDelay sonrası gidilecek hedef
+int delayedTarget = -1;   
 int isikBeklemeSuresi = 3000;
 bool doguHandled = false;
 int setIsikBeklemeSuresi = 5000;

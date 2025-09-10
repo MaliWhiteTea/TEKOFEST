@@ -895,8 +895,71 @@ void bekle(unsigned long sure) {
 
     
     }
+    if (getYogunluk() == "bati") {
+
+          
+          switch (an) {
+            case 1: 
+              targetAn = 14; isikBeklemeSuresi = setIsikBeklemeSuresi; break;
+              
+            case 2:
+              targetAn = 13; isikBeklemeSuresi = setIsikBeklemeSuresi; break;
+            case 3:
+              targetAn = 4;
+              veriGonder(veri("KS"));                        // önce 4'e atla
+              delayedTarget = 13;                  // sonra 13'e gidecek
+              specialDelayActive = true;           // özel beklemeyi başlat
+              specialDelayEnd = millis() + 2000; 
+              isikBeklemeSuresi = setIsikBeklemeSuresi; 
+              break;
+            case 4:
+              targetAn = 13; isikBeklemeSuresi = setIsikBeklemeSuresi; break;
+            case 5:
+              targetAn = 14; isikBeklemeSuresi = setIsikBeklemeSuresi; break;
+            case 6:
+              targetAn = 13; isikBeklemeSuresi = setIsikBeklemeSuresi; break;
+            case 7:
+              targetAn = 8;
+              veriGonder(veri("DS"));                        // önce 4'e atla
+              delayedTarget = 13;                  // sonra 13'e gidecek
+              specialDelayActive = true;           // özel beklemeyi başlat
+              specialDelayEnd = millis() + 2000;   // 2 saniye sonra tetiklenecek
+              isikBeklemeSuresi = setIsikBeklemeSuresi; 
+              break;              
+            case 8:
+              targetAn = 13; isikBeklemeSuresi = setIsikBeklemeSuresi; break;
+            case 9: 
+              targetAn = 14; isikBeklemeSuresi = setIsikBeklemeSuresi; break;
+            case 10:
+              targetAn = 13; isikBeklemeSuresi = 3000; break;
+            case 11:
+              targetAn = 4;
+              veriGonder(veri("GS"));                        // önce 4'e atla
+              delayedTarget = 13;                  // sonra 13'e gidecek
+              specialDelayActive = true;           // özel beklemeyi başlat
+              specialDelayEnd = millis() + 2000;   // 2 saniye sonra tetiklenecek
+              isikBeklemeSuresi = setIsikBeklemeSuresi; 
+              break;
+            case 12:
+              targetAn = 13; isikBeklemeSuresi = setIsikBeklemeSuresi; break;
+            case 13:
+              targetAn = 14; isikBeklemeSuresi = setIsikBeklemeSuresi; break;
+            case 14:
+              targetAn = 15; isikBeklemeSuresi = setIsikBeklemeSuresi; break;
+            case 15:
+              targetAn = 15; isikBeklemeSuresi = setIsikBeklemeSuresi; break;          
+            case 16:
+              targetAn = 15; isikBeklemeSuresi = setIsikBeklemeSuresi; break;              
+            
+
+          }
+          
+          
+             // örnek: doğrudan an=7’ye atla (Doğu Yeşil)
+        }
+    }
   }
-}
+
 
 
 
